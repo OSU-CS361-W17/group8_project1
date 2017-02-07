@@ -1,10 +1,10 @@
-## BattleShip Program
-#### By Bruce Garcia, Jashua Lioy, Chase McWhirt, Tsewei Peng
+# BattleShip Program
+## By Bruce Garcia, Jashua Lioy, Chase McWhirt, Tsewei Peng
 
 Link to [Java Code](https://github.com/OSU-CS361-W17/group8_project1/tree/master/src/main/java/edu/oregonstate/cs361/battleship)
 Link to [Front-End Code](https://github.com/OSU-CS361-W17/group8_project1/tree/master/src/main/resources/public)
 
-##### Current Data Structure:
+### Current Data Structure:
 ```json
 {
     "aircraftCarrier": {
@@ -13,7 +13,7 @@ Link to [Front-End Code](https://github.com/OSU-CS361-W17/group8_project1/tree/m
         "start": { "row": 0,"col": 0 },
         "end": {"row": 0, "col": 0}
     },
-    ...... (Other ships)
+    ... (Other ships)
     "computer_aircraftCarrier": {
         "name": "Computer_AircraftCarrier",
         "length": 5,
@@ -44,18 +44,18 @@ Link to [Front-End Code](https://github.com/OSU-CS361-W17/group8_project1/tree/m
         "start": { "Across": 9, "Down": 6 },
         "end": {"Across": 9, "Down": 8}
     },
-    "playerHits": [{row: 5, col: 10}......],
-    "playerMisses": [{row: 4, col: 10}......],
-    "computerHits": [{row: 2, col, 1}......],
-    "computerMisses": [row: 10, col: 5}......]
+    "playerHits": [{row: 5, col: 10}...],
+    "playerMisses": [{row: 4, col: 10}...],
+    "computerHits": [{row: 2, col, 1}...],
+    "computerMisses": [row: 10, col: 5}...]
 }
 ```
-###### To start battleship:
+### To start battleship:
 Type this in brower:
 ```
 localhost:4567
 ```
-###### Placing ship request:
+### Placing ship request:
 ```
 http://localhost:4567/placeShip/{shipname}/{across}/{down}/{horizontal | vertical}
 ```
@@ -64,7 +64,7 @@ an example request is:
 http://localhost:4567/placeShip/aircraftCarrier/1/1/horizontal
 ```
 
-###### User fire request:
+### User fire request:
 ```
 http://localhost:4567/fire/{across}/{down}
 ```
