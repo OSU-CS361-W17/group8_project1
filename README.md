@@ -1,24 +1,10 @@
-# cs361 Project 1
-This is the code you will use as a starting point for Project 1.  The code you have been given has the front end for a [battleship](https://en.wikipedia.org/wiki/Battleship_(game)) game.
-As is often the case when developing real-world software, you and your team have been given a front end, and are responsible for developing a back-end that will make the game work correctly.
+## BattleShip Program
+#### By Bruce Garcia, Jashua Lioy, Chase McWhirt, Tsewei Peng
 
-# Concepts
-Two commonly used methods for a request-response between a client and server are: `GET` and `POST`.
+Link to [Java Code](https://github.com/OSU-CS361-W17/group8_project1/tree/master/src/main/java/edu/oregonstate/cs361/battleship)
+Link to [Front-End Code](https://github.com/OSU-CS361-W17/group8_project1/tree/master/src/main/resources/public)
 
-`GET` - Requests data from a specified resource
-
-`POST` - Submits data to be processed to a specified resource
-
-# Instructions
-
-The game should operate as follows:
-
-1) Load the HTML page (provided for you in `sampleBattleShip/src/main/resources/public/index.html`)
-
-2) When the HTML page is loaded, it will send a `GET` request to the back-end. 
-
-3) The back-end will create a new game model, and convert it to JSON before sending it to the front-end. If you want the game state to display without having to modify the front-end, the game state should look something like this:
-
+##### Current Data Structure:
 ```json
 {
     "aircraftCarrier": {
@@ -127,12 +113,3 @@ For this example request, the model response would include:
 
 
 6) The `POST` requests will continue for each user input until the game state reaches the end of that particular game of Battleship.
-
-
-# Tips and tricks:
-
-To implement this code, you will be using [Java Spark](http://sparkjava.com).
-
-You will make your life MUCH easier if you use [GSON](https://github.com/google/gson) to seralize/deserialize the JSON objects to/from java objects.
-
-You might also find the jquery documentation useful.
