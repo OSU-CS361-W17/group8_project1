@@ -115,10 +115,12 @@ http://localhost:4567/fire/4/3
 Make it general and abstract, to adapt to different sizes of boards)
 - Make AI able to place their own ships (Hard)
 - Make AI fire at user ships, while not firing out of bound (Hard)
+
 ### Error Handling
 (Will have to discuss to inforce which error handling on front-end or back-end)
 - When user place a ship that is out of bound, return error
 - When user fire at something out of bound, (Not sure if that is even possible)
+
 ### Front-end
 - Design the interface so it looks more pleasant, includes: 
     - Make a starting menu
@@ -134,17 +136,21 @@ Make it general and abstract, to adapt to different sizes of boards)
 - across and down becomes row and column for the sake of sanity.
 - All name follow this format: e.g. userFireBattleshipModel (always start with lowercase letter)
 - All classes name start with Uppercase letters.
+
 ### Planning
 - Please plan before you code, if there is something you are confused about post it on slack.
+
 ### Coding
 - Don't make your function exceed 30 lines, because that means you are probably doing something that can be simplified.
 - Don't add a lot of functions into Main class if they can be put into a different class. For the sake of visibility.
 - Make classes if code can be simpler and more readable, don't be reluctant to do so.
 - For each class you must have a constructor, and accessor and mutators are not required, but please provide it if it can be used. (Based on your design)
 - For some functions that can be used across all program, put it into Utility class, it can be accessed by Utility.func(whatever whatever)
+
 ### Comment
 - Comments are necessary, but not too much that it decrease the readablity of codes.
 - For functions that are not constructor, accessor, mutator, please briefly explain what the function does.
 - In Utilty functions, please make comments on what the parameter can, and what is returned.
+
 ### In conclusion
 Think about what kind of code you want to see when you are receiving it, make it that way.
